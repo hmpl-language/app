@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from "astro/config";
+import sitemap from '@astrojs/sitemap';
 import starlight from "@astrojs/starlight";
 import vue from "@astrojs/vue";
 import starlightThemeNova from "starlight-theme-nova";
@@ -8,11 +9,23 @@ export default defineConfig({
   site: "https://hmpl-lang.dev",
   integrations: [
     vue(),
+    sitemap({
+      lastmod: new Date()
+    }),
     starlight({
       title: "HMPL Documentation",
       description:
         "HMPL.js is a lightweight server-oriented template language for JavaScript. Fetch HTML, render it safely, and keep apps dynamic, modern, and small. Alternative to HTMX and Alpine.js.",
       customCss: ["./src/styles/main.css"],
+      head: [
+        {
+          tag: 'meta',
+          attrs: {
+            name: "keywords",
+            content: "hmpl, hmpl templates, fast template engine, html templating, server side rendering, express template engine"
+          }
+        }
+      ],
       logo: {
         src: "./src/assets/logo.svg"
       },
