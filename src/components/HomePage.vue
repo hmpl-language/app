@@ -634,11 +634,11 @@ export default HomePageScript;
               </a>
             </div>
             <a
-              href="https://devhunt.org/tool/hmpljs"
+              href="https://producthunt.com/products/hmpl-js/launches/hmpl-3"
               target="_blank"
               class="badge"
             >
-              <img class="badge-img" src="/images/devhunt.svg" />
+              <img class="badge-img" src="/images/producthunt.svg" />
             </a>
           </div>
         </div>
