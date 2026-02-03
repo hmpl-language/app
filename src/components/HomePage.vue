@@ -675,13 +675,4 @@ export default HomePageScript;
       >issue list</a
     >.
   </div>
-  <!-- Scroll to top button -->
-  <button
-    class="scroll-to-top"
-    v-show="showScroll"
-    @click="scrollToTop"
-    aria-label="Scroll to top"
-  >
-    <i class="fas fa-arrow-up" aria-hidden="true"></i>
-  </button>
 </template>

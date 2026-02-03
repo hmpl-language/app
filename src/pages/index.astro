@@ -1,8 +1,9 @@
 ---
-  import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
-  import StructuredData from '../components/StructuredData.astro';
-
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import StructuredData from "../components/StructuredData.astro";
+import UpButton from "../components/UpButton.vue";
 ---
+
 <style>
   * {
     margin: 0;
@@ -31,27 +32,28 @@
     margin: 0;
   }
   :global(.main-frame) {
-    padding: 0 !important;   
+    padding: 0 !important;
     margin: 0 !important;
   }
 </style>
 
-<StarlightPage frontmatter={{ title: 'HMPL.js' }} hasSidebar={false}>
-  <StructuredData 
+<StarlightPage frontmatter={{ title: "HMPL.js" }} hasSidebar={false}>
+  <StructuredData
     title="HMPL.js - Lightweight Server-Oriented Template Language for JavaScript"
     description="HMPL.js is a lightweight server-oriented template language for JavaScript. Fetch HTML, render it safely, and keep apps dynamic, modern, and small. Alternative to HTMX and Alpine.js."
     url="https://hmpl-lang.dev"
   />
   <div id="app"></div>
+  <UpButton client:load />
 </StarlightPage>
 
 <script is:inline>
-  document.documentElement.dataset.theme = 'light';
+  document.documentElement.dataset.theme = "light";
 </script>
 
 <script>
-  import { createApp } from 'vue'
-  import LandingPage from '../components/HomePage.vue'
+  import { createApp } from "vue";
+  import LandingPage from "../components/HomePage.vue";
 
-  createApp(LandingPage).mount('#app')
+  createApp(LandingPage).mount("#app");
 </script>
