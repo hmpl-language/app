@@ -658,7 +658,7 @@ export default HomePageScript;
               </p>
             </div>
             <p class="footer_copyright_text">
-              MIT Licensed | © 2024-2025 HMPL.js
+              MIT Licensed | © 2024-2026 HMPL.js
             </p>
           </div>
         </div>
@@ -666,7 +666,7 @@ export default HomePageScript;
     </div>
   </footer>
   <div class="note">
-    This project participates in Hacktoberfest 2025. See the
+    This project participates in Hacktoberfest 2026. See the
     <a
       class="note_link"
       href="https://github.com/hmpl-language/hmpl/issues"
